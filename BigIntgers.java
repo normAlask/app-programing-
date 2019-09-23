@@ -8,9 +8,9 @@ Professor: Tanvir-Irfan Chowdhury
 Sections: 001
 
 Lab Summary
-• Familiarity with Eclipse IDE.
-• Java syntax.
-• Object oriented programming.
+ï¿½ Familiarity with Eclipse IDE.
+ï¿½ Java syntax.
+ï¿½ Object oriented programming.
 Description
 In this assignment, your task is to write a class in Java for big integer numbers.
 Normally we cannot add (or subtract etc) very big numbers, say 1000 digits
