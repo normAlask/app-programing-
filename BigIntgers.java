@@ -64,8 +64,8 @@ Constructor Default constructor that creates a big integer
 Constructor that initializes num[ ] with number[ ] and
 sets the Length
  */
-    public BigIntgers(char[] a) {
-        this.number = a;
+    public BigIntgers(char[] number) {
+        this.number = number;
     }
 
 /*
@@ -88,9 +88,17 @@ n and sets Length.
 This function is like the first constructor
 that initializes num[ ] with a[ ] and sets the Length.
  */
-    public void setBigInt(char[] a)
+    public void setBigInt(long number)
     {
-        this.number=number;
+        this.number = new char[1000];
+        populate();
+        //convert the long n to a string
+        String numString = Long.toString(number);
+        char[] tmpArray = numString.toCharArray();
+
+        for (int x = tmpArray.length - 1; x >= 0; x--) {
+            this.number[(this.number.length) - (tmpArray.length - x)] = tmpArray[x];
+        }
     }
 /*
 Adds big integer n to current object and
