@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="561.0" prefWidth="722.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.application.controller.MainController">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="841.0" GridPane.columnIndex="1">
+         <children>
+            <Label layoutX="190.0" layoutY="10.0" prefHeight="145.0" prefWidth="553.0" text="United Federation of Planets" textFill="#0b19bd">
+               <font>
+                  <Font name="Arial Narrow" size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="202.0" prefHeight="52.0" prefWidth="443.0" text="Enter a starship name to view personnel: ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="myTextArea" layoutX="124.0" layoutY="334.0" prefHeight="255.0" prefWidth="593.0" />
+            <Button layoutX="379.0" layoutY="295.0" mnemonicParsing="false" onAction="#MyButton" text="Submit " textFill="#131313" />
+            <ImageView fitHeight="150.0" fitWidth="170.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Federation_presidential_seal.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="myTextField" layoutX="223.0" layoutY="254.0" prefHeight="26.0" prefWidth="388.0" />
+         </children>
+      </Pane>
+   </children>
+</GridPane>
