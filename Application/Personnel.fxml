@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.controller.PersonnelController">
+   <children>
+      <Pane>
+         <children>
+            <AnchorPane prefHeight="800.0" prefWidth="800.0">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="152.0" layoutX="16.0" layoutY="13.0">
+                     <image>
+                        <Image url="@../external-content.duckduckgo.gif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="Welcome" layoutX="390.0" layoutY="29.0" textAlignment="CENTER">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0" startX="0.5174603167034331">
+                           <stops>
+                              <Stop color="#2916f7" />
+                              <Stop color="#fe2b2b" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font name="Bell MT" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lableName1" layoutX="130.0" layoutY="298.0" />
+                  <Label fx:id="lableName2" layoutX="287.0" layoutY="298.0" />
+                  <Label fx:id="lableName3" layoutX="438.0" layoutY="298.0" />
+                  <Label fx:id="lableName4" layoutX="622.0" layoutY="298.0" />
+                  <Label fx:id="lableName5" layoutX="130.0" layoutY="499.0" />
+                  <Label fx:id="lableName6" layoutX="275.0" layoutY="499.0" />
+                  <Label fx:id="lableName7" layoutX="456.0" layoutY="499.0" />
+                  <Label fx:id="lableName8" layoutX="622.0" layoutY="499.0" />
+                  <ImageView fx:id="imageView1" fitHeight="126.0" fitWidth="139.0" layoutX="85.0" layoutY="172.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView2" fitHeight="126.0" fitWidth="139.0" layoutX="234.0" layoutY="172.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView3" fitHeight="126.0" fitWidth="139.0" layoutX="401.0" layoutY="172.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView4" fitHeight="126.0" fitWidth="139.0" layoutX="553.0" layoutY="172.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView5" fitHeight="126.0" fitWidth="139.0" layoutX="85.0" layoutY="337.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView6" fitHeight="126.0" fitWidth="139.0" layoutX="234.0" layoutY="337.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView7" fitHeight="126.0" fitWidth="139.0" layoutX="401.0" layoutY="337.0" pickOnBounds="true" />
+                  <ImageView fx:id="imageView8" fitHeight="126.0" fitWidth="139.0" layoutX="567.0" layoutY="337.0" pickOnBounds="true" />
+                  <Button layoutX="596.0" layoutY="42.0" mnemonicParsing="false" onAction="#LogOut" text="Log out" />
+                  <Label fx:id="Registry" layoutX="343.0" layoutY="75.0" textAlignment="CENTER">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#393932" />
+                              <Stop color="#ff0202" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
